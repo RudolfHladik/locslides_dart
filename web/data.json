@@ -1,0 +1,24 @@
+{
+  "persons": [
+    {
+      "name": "Ruda",
+      "birthPlace": "Praha",
+      "age": "27",
+      "photo": "ruda.jpg",
+      "map": {
+        "lat": "50",
+        "long": "15"
+      }
+    },
+    {
+      "name": "Lenka",
+      "birthPlace": "Zatec",
+      "age": "24",
+      "photo": "lenka.jpg",
+      "map": {
+        "lat": "50",
+        "long": "14.5"
+      }
+    }
+  ]
+}

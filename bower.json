@@ -1,0 +1,32 @@
+{
+  "name": "locslides_dart",
+  "version": "0.0.0",
+  "authors": [
+    "Rudolf Hladik <hladik.rudolf@gmail.com>"
+  ],
+  "description": "location-based web app",
+  "main": "web/index.html",
+  "keywords": [
+    "polymer",
+    "dart",
+    "google-map",
+    "slideshow"
+  ],
+  "license": "MIT",
+  "homepage": "rudolfhladik.com/locslides",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "0.5",
+    "core-animated-pages": "Polymer/core-animated-pages#^0.5",
+    "core-header-panel": "Polymer/core-header-panel#^0.5",
+    "paper-button": "Polymer/paper-button#^0.5",
+    "core-toolbar": "Polymer/core-toolbar#^0.5",
+    "google-map": "0.4"
+  }
+}

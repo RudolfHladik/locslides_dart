@@ -1,0 +1,24 @@
+{
+  "pic": [
+    {
+      "title": "Praha",
+      "desc": "Hlavní mìsto èeské republiky pøezdíváné stovìžatá Praha",
+      "filename": "praha.jpg"
+    },
+    {
+      "title": "Cesky_Krumlov",
+      "desc": "dominanta ceskeho krumlova hrad",
+      "filename": "cesky-krumlov-castle-museum.jpg"
+    },
+    {
+      "title": "Karlstejn",
+      "desc": "Hrad Karlstejn ..",
+      "filename": "karlstejn-castle.jpg"
+    },
+    {
+      "title": "Zelena_hora",
+      "desc": "Zdar nad Sazavou - chram sv. Jana Nepomuckeho chranena pamatka Unesco",
+      "filename": "zdar-nad-sazavou-unesco-zelena-hora-pilgrimage-church-of-st-john-nepomukjpg.jpg"
+    }
+  ]
+}

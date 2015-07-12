@@ -1,0 +1,94 @@
+<!--
+  Copyright (c) 2015, <your name>. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<!-- import polymer-element's definition -->
+<link rel="import" href="../../packages/polymer/polymer.html">
+<link rel="import" href="elements.html"/>
+<link rel="import" href="../../packages/paper_elements/paper_input.html">
+<link rel="import" href="elements_bower.html"/>
+
+
+<polymer-element name="main-app">
+  <template>
+
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+      :host {
+        display: block;
+        height: 100%;
+        
+
+      }
+
+
+    </style>
+    <!--  -----------------------------MYAPP----------------  -->
+
+<core-header-panel>
+  <core-toolbar>
+     <span flex class="row">        
+          <div horizontal around-justified layout>
+            <paper-button id="btn_home" on-click="{{changePage}}"> ČR </paper-button>
+            <paper-button id="btn_projects" on-click="{{changePage}}"> Romania </paper-button>
+            <paper-button id="btn_tools" on-click="{{changePage}}" > Russia </paper-button>
+            <paper-button id="btn_about" on-click="{{changePage}}"> Poland </paper-button>
+          </div>
+      </span>
+  </core-toolbar>
+  <div class="content">
+    <core-animated-pages transitions="hero transition slide-from-right" selected="{{selected}}">
+      <section id="world_map" >
+      
+        <div class="region" fit>         
+
+       
+        
+         <google-map apiKey="AIzaSyBL8aL7ucX7SC6hGFqNsC6RjD8p-eUMfu0" 
+                    latitude="30.090517"
+                    longitude="15.530337"
+                    zoom="{{zoomLvl}}" >
+
+         
+
+        </google-map>
+         </div>
+
+
+      </section>
+      <section id="czech_map" >
+        <div class="czech_map" fit>
+        <div class="fabs" horizontal center-justified layout>
+          <paper-fab mini on-click="{{changePage}}" id="back" icon="forward" class="move"></paper-fab>
+          <paper-fab on-click="{{changePage}}" icon="send" id="play"></paper-fab>
+          <paper-fab mini on-click="{{changePage}}" icon="forward" id="next" class="move"></paper-fab>
+        </div>
+        <core-animated-pages id="slideShow" selected="{{slideSelected}}" transitions="hero transition cross-fade-all">
+        <section>
+          <div class="back"></div>
+        </section>  
+        </core-animated-pages>
+
+        </div>
+      </section>
+      <section id="romania_map" >
+        <div>
+          <p>section 2</p>
+        </div>
+      </section>
+      <section id="russia_map" >
+        <div>
+          <p>section 3</p>
+        </div>
+      </section>
+    </core-animated-pages>
+  </div>
+
+</core-header-panel>
+
+  </template>
+  <script type="application/dart" src="main_app.dart"></script>
+
+
+</polymer-element>
